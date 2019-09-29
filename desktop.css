@@ -345,7 +345,6 @@ body {
     background-position: 53% 51%;
 }
 
-
 .services {
     position: relative;
     width: 100%;
@@ -416,11 +415,6 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 26px;
 }
-
-
-
-
-
 
 .content-block {
     display: none;
