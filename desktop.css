@@ -1,0 +1,731 @@
+@font-face {
+    font-family: 'Open Sans';
+    src: url('./assets/fonts/OpenSans-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'PT Sans';
+    src: url('./assets/fonts/PTC55F.ttf');
+}
+
+@font-face {
+    font-family: 'Myriad Pro';
+    src: url('./assets/fonts/MYRIADPRO-REGULAR.OTF');
+}
+
+@font-face {
+    font-family: 'Segoe WP Light';
+    src: url('./assets/fonts/segoe-wp-light.ttf');
+}
+
+@font-face {
+    font-family: 'Asap Regular';
+    src: url('./assets/fonts/Asap-Regular.otf');
+}
+
+*,
+*:before,
+*:after, 
+a {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    max-width: 1300px;
+    width: 100%;
+    height: 1847px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.header {
+    width: 100%;
+    height: 90px;
+    position: absolute;
+    top: 24px;
+    display: flex;
+}
+
+.logo-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    width: 310px;
+    position: relative;
+    left: 143px;
+}
+
+.logo-img {
+    background-image: url('./assets/img/desktop/background-header-logo.png');
+    background-repeat: no-repeat;
+    margin-top: 4px;
+}
+
+.logo-block h1 {
+    font-size: 39px;
+    font-style: italic;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #ffff;
+    margin-top: 11px;
+}
+
+.nav {
+    width: 453px;
+    height: 41px;
+    display: flex;
+    position: relative;
+    top: 46px;
+    left: 398px;
+    background-color: #f5c506;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 20;
+}
+
+.nav__item:hover {
+    background-color: #ffa705;
+}
+
+.nav__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.nav a {
+    position: relative;
+    top: 1px;
+    color: #9b7d08;
+}
+
+.nav__item-1 {
+    display: none;
+}
+
+.nav__item-2 {
+    width: 172px;
+}
+
+.nav__link-2 {
+    left: 41px;
+}
+
+.nav__item-3 {
+    width: 132px;
+    border: 1px solid #dcb105;
+    border-top: none;
+    border-bottom: none;
+}
+
+.nav__link-3 {
+    left: 16px;
+}
+
+.nav__item-4 {
+    width: 147px;
+}
+
+.nav__link-4 {
+    left: 18px;
+}
+
+.nav__tx-link {
+    font-size: 18px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.nav__mob-img {
+    display: none;
+}
+
+.menu-layer {
+    width: 453px;
+    height: 41px;
+    position: absolute;
+    background-color: #f5c506;
+    z-index: 10;
+    left: 704px;
+    top: 42px;
+}
+
+.menu-layer-1 {
+    top: 38px;
+    left: 700px;
+    opacity: 0.3;
+}
+
+.menu-layer-2 {
+    opacity: 0.3;
+}
+
+
+
+
+.player-block {
+    display: none;
+}
+
+.desk-player-block {
+    width: 100%;
+    height: 567px;
+    background-image: url('./assets/img/desktop/2-header-layer.png');
+    background-repeat: no-repeat;
+    
+}
+
+.desk-player-block__inner {
+    display: flex;
+    width: 100%;
+    height: 400px;
+    position: relative;
+    top: 168px;
+}
+
+.desk-player {
+    width: 549px;
+    height: 327px;
+}
+
+.slider-btn {
+    width: 32px;
+    height: 57px;
+    background-color: #f5c506;
+    opacity: 0.3;
+    margin-top: 132px;
+}
+
+.desk-player__inner {
+    margin-left: 118px;
+}
+
+
+
+
+
+.player__controllers {
+    width: 548px;
+    height: 327px;
+    position: absolute;
+    left: 150px;
+    z-index: 100;
+}
+
+.video-block__play-btn {
+    width: 67px;
+    height: 67px;
+    position: relative;
+    border-radius: 50%;
+    background-color: #f8e07f;
+    top: 133px;
+    margin: 0 auto;
+    opacity: 0.7;
+}
+
+.video-block__play-btn__img {
+    margin-top: 15px;
+    margin-left: 27px;
+}
+
+.player__controllers__bottom {
+    position: relative;
+    top: 210px;
+    left: 30px;
+    opacity: 0.6;
+}
+
+.player__controllers__bottom {
+    width: 501px;
+    height: 27px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.player__controllers__bottom__play {
+    width: 27px;
+    height: 27px;
+    background-color: #f8e07f;
+}
+
+.player__controllers__bottom__progress-bar {
+    width: 406px;
+    height: 12px;
+}
+
+.background {
+    background-color: #f8e390;
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+    margin-left: -4px;
+}
+
+.progress {
+    height: 46%;
+    width: 36%;
+    background-color: #f5c507;
+    border-radius: 4px 0 0 4px;
+    position: absolute;
+    top: 7px;
+    margin-left: -4px;
+}
+
+.player__controllers__bottom__play:hover, .video-block__play-btn:hover {
+    cursor: pointer;
+    background-color: #f5c507;
+    opacity: 1;
+}
+
+.player__controllers__bottom__play img {
+    position: relative;
+    top: 5px;
+    left: 10px;
+}
+
+.player__controllers__bottom__sound:hover {
+    cursor: pointer;
+    background-color: #ffffff;
+}
+
+.player__controllers__bottom__sound {
+    width: 15px;
+    height: 15px;
+    margin-top: 2px;
+}
+
+.player__controllers__bottom__progress-bar:hover {
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* .desk-player__filter {
+    background-color: #f5c506;
+    width: 549px;
+    height: 327px;
+    opacity: 0.5;
+} */
+
+.headers__inner {
+    margin-left: 30px;
+    margin-top: 79px;
+}
+
+.headers {
+    width: 418px;
+    height: 139px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.headers__item {
+    font-size: 60px;
+    font-family: 'Asap Regular';
+    word-spacing: 7px;
+}
+
+.headers__item-1 {
+    color: #f5c506;
+}
+
+.headers__item-2 {
+    color: #ffffff;
+}
+
+.prev-btn:hover, .next-btn:hover {
+    cursor: pointer;
+    opacity: 1;
+}
+
+.prev-btn {
+    background-image: url('./assets/img/desktop/prev-btn.png');
+    background-repeat: no-repeat;
+    background-position: 35% 51%;
+}
+
+.next-btn {
+    margin-left: 121px;
+    background-image: url('./assets/img/desktop/right-btn.png');
+    background-repeat: no-repeat;
+    background-position: 53% 51%;
+}
+
+
+.services {
+    width: 100%;
+    height: 212px;
+    background-image: url('./assets/img/desktop/services-background.png');
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+}
+
+.services__item {
+    width: 340px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.services__item-1 {
+    margin-left: 140px;
+    border: 1px solid #d4d4d4;
+    border-top: none;
+    border-bottom: none;
+}
+
+.services__item-2, .services__item-3 {
+    border: 1px solid #d4d4d4;
+    border-left: none;
+    border-top: none;
+    border-bottom: none;
+}
+
+.item__mob-img {
+    display: none;
+}
+
+.item__desk-img-1 {
+    margin-top: 59px;
+}
+
+.item__desk-img-2 {
+    margin-top: 35px;
+    margin-left: 23px;
+}
+
+.item__desk-img-3 {
+    margin-top: 52px;
+    margin-left: -19px;
+}
+
+.item__span-1 {
+    margin-top: 11px;
+    margin-left: 18px;
+}
+
+.item__span-2 {
+    margin-left: 20px;
+    margin-top: 15px;
+}
+
+.item__span-3 {
+    margin-right: 15px;
+    margin-top: 10px;
+}
+
+.item__span {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 26px;
+}
+
+
+
+
+
+
+.content-block {
+    display: none;
+}
+
+.desk-content-block {
+    width: 100%;
+    height: 508px;
+    background-image: url('./assets/img/desktop/main-content-background.png')
+}
+
+.content-block__header {
+    color: #ffffff;
+    font-family: 'PT Sans';
+    font-size: 33px;
+    position: relative;
+    top: 34px;
+    left: 144px;
+    word-spacing: 3px;
+}
+
+.blocks-content__inner {
+    margin: 0 auto;
+    position: relative;
+    top: 66px;
+}
+
+.blocks-content {
+    width: 1020px;
+    height: 232px;
+    display: flex;
+}
+
+.article-block {
+    width: 340px;
+    height: 232px;
+}
+
+.article-block {
+    background-color: #ec9e03;
+    padding: 17px 29px 9px 30px;
+}
+
+.article-block__text {
+    font-size: 27px;
+    font-family: 'Segoe UI';
+    color: white;
+    text-align: center;
+    line-height: 38px;
+    word-spacing: 2px;
+    letter-spacing: 0.15px;
+}
+
+.article-block__img:hover {
+    cursor: pointer;
+}
+
+.article-block__img {
+    top: 24px;
+    position: relative;
+    right: -168px;
+}
+
+.video-player {
+    width: 314px;
+    height: 100%;
+}
+
+.blocks-content .video-block__play-btn {
+    width: 61px;
+    height: 61px;
+    position: absolute;
+    border-radius: 50%;
+    background-color: #f8e07f;
+    top: 93px;
+    left: 470px;
+    opacity: 0.6;
+}
+
+.blocks-content .video-block__play-btn:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.blocks-content .video-block__play-btn__img {
+    margin-left: 25px;
+}
+
+.twitter-container {
+    width: 330px;
+    height: 100%;
+    background-color: #ec9e03;
+    background-image: url('./assets/img/desktop/twitter-logo.png');
+    background-position: 51% 60%;
+    background-repeat: no-repeat;
+    margin-left: 34px;
+}
+
+.corner-num {
+    font-family: 'Segoe WP Light';
+    color: #ffffff;
+    font-size: 27px;
+    position: relative;
+    top: 10px;
+    right: -286px;
+}
+
+.bottom-corner-img:hover {
+    cursor: pointer;
+}
+
+.bottom-corner-img {
+    position: relative;
+    bottom: -192px;
+    right: -279px;
+}
+
+.data-block__inner {
+    position: relative;
+    left: 140px;
+    top: 66px;
+}
+
+.data-block {
+    width: 113px;
+    height: 86px;
+    background-color: #ddb101;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.data-block__data {
+    position: relative;
+    top: 2px;
+    left: 4px;
+    color: #ffffff;
+    font-size: 47px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.data-block__month {
+    color: #b26529;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: relative;
+    font-size: 20px;
+    margin-top: -5px;
+    margin-left: 8px;
+}
+
+.slider-line__inner {
+    position: relative;
+    top: 110px;
+    left: 10px;
+    margin: 0 auto;
+}
+
+.slider-line {
+    width: 896px;
+    height: 15px;
+    background-color: #ffffff;
+    border-radius: 7px;
+    opacity: 0.5;
+}
+
+.slider-line:hover {
+    cursor: pointer;
+}
+
+.slider-line__btn {
+    width: 197px;
+    height: 100%;
+    position: relative;
+    left: 247px;
+    background-color: #ec9e03;
+    border-radius: 7px;
+}
+
+.images-block {
+    width: 100%;
+    height: 497px;
+    background-color: #474747;
+    background-image: url('./assets/img/pc.png'),
+                      url('./assets/img/tablet.png'),
+                      url('./assets/img/mobile.png'),
+                      url('./assets/img/desktop/background-image-block.png');
+    background-position: 16% 56%, 43% 55%, 52% 66%, 0 0;
+    background-repeat: no-repeat;
+}
+
+.title {
+    font-family: 'Open Sans';
+    color: #c9a516;
+    font-size: 36px;
+    position: relative;
+    text-align: center;
+    top: 40px;
+    word-spacing: 4px;
+    letter-spacing: 1.9px;
+}
+
+.circle {
+    width: 116px;
+    height: 116px;
+    border-radius: 50%;
+    background-color: #f5c506;
+    position: relative;
+    top: 46px;
+    left: 139px;
+}
+
+.advertisement-post {
+    font-family: 'PT Sans';
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    position: relative;
+    top: 48px;
+}
+
+.content-list {
+    width: 30%;
+    height: 225px;
+    position: relative;
+    left: 778px;
+    top: 17px;
+}
+
+.content-list__text {
+    font-family: 'Myriad Pro';
+    font-size: 20px;
+    color: #a9a9a7;
+    margin-bottom: 24px;
+    /* list-style-image: url('./assets/img/desktop/list-marker.png'); */
+}
+
+.content-list__span {
+    padding-left: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.twitter-block {
+    display: none;
+}
+
+.footer {
+    width: 100%;
+    height: 65px;
+    background-color: #4c4c4c;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+
+.logo {
+    width: 130px;
+    height: 100%;
+    background-image: url('./assets/img/desktop/background-footer-logo.png');
+    background-repeat: no-repeat;
+    background-position: 2% 50%;
+    display: flex;
+    position: relative;
+    left: 140px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo__img {
+    display: none;
+}
+
+.logo__title {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: italic;
+    font-size: 26px;
+    color: #ffffff;
+    top: 4px;
+    position: relative;
+    text-shadow: 0px 2px 0px rgba(0, 0, 0, 0.42);
+    left: 9px;
+    letter-spacing: 1.6px;
+}
