@@ -33,6 +33,10 @@ a {
     text-decoration: none;
 }
 
+html {
+    overflow-x: hidden;
+}
+
 body {
     max-width: 1300px;
     width: 100%;
@@ -163,9 +167,6 @@ body {
     opacity: 0.3;
 }
 
-
-
-
 .player-block {
     display: none;
 }
@@ -202,10 +203,6 @@ body {
 .desk-player__inner {
     margin-left: 118px;
 }
-
-
-
-
 
 .player__controllers {
     width: 548px;
@@ -302,23 +299,6 @@ body {
     cursor: pointer;
 }
 
-
-
-
-
-
-
-
-
-
-
-/* .desk-player__filter {
-    background-color: #f5c506;
-    width: 549px;
-    height: 327px;
-    opacity: 0.5;
-} */
-
 .headers__inner {
     margin-left: 30px;
     margin-top: 79px;
@@ -367,12 +347,14 @@ body {
 
 
 .services {
+    position: relative;
     width: 100%;
     height: 212px;
-    background-image: url('./assets/img/desktop/services-background.png');
+    background-image: url(./assets/img/desktop/services-background.png);
     background-repeat: no-repeat;
     display: flex;
     align-items: center;
+    box-shadow: 0px 0px 6px 2px rgba(0,0,0,0.69)
 }
 
 .services__item {
@@ -672,23 +654,19 @@ body {
     font-size: 20px;
     color: #a9a9a7;
     margin-bottom: 24px;
-    /* list-style-image: url('./assets/img/desktop/list-marker.png'); */
+    list-style-image: url('./assets/img/desktop/list-marker.png');
 }
 
 .content-list__span {
-    padding-left: 5px;
+    position: relative;
+    left: 16px;
+    word-spacing: 14px;
 }
 
-
-
-
-
-
-
-
-
-
-
+.new-ln {
+    position: relative;
+    left: 19px;
+}
 
 .twitter-block {
     display: none;

@@ -41,6 +41,7 @@ body {
 }
 
 .nav {
+    position: relative;
     display: flex;
     height: 100%;
 }
